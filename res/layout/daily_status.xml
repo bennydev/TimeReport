@@ -34,7 +34,9 @@
         android:layout_margin="25dp"
         android:layout_marginLeft="25dp"
         android:layout_marginRight="25dp"
-        android:text="@string/punch_out" />
+        android:text="@string/punch_in"
+        android:textOff="punch_in"
+        android:textOn="punch_out" />
 
     <Button
         android:id="@+id/btnViewReports"

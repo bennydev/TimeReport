@@ -2,7 +2,7 @@ package se.cag.timereport.activity.daily;
 
 import se.cag.timereport.R;
 import se.cag.timereport.activity.report.ListReportsActivity;
-import se.cag.timereport.activity.settings.UserSettingsActivity;
+import se.cag.timereport.activity.settings.SettingsMenuActivity;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -22,7 +22,6 @@ public class WorkStatusActivity extends Activity implements OnClickListener {
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
-        setContentView(R.layout.daily_status);
         Button but = (Button) findViewById(R.id.btnSettings);
         but.setOnClickListener(this);
         but = (Button) findViewById(R.id.btnViewReports);
@@ -41,6 +40,7 @@ public class WorkStatusActivity extends Activity implements OnClickListener {
         	// Set the punched in string on the text view
         }
         workStatus.setText(R.string.not_initialized);
+        setContentView(R.layout.daily_status);
 	}
 
 	@Override
@@ -51,7 +51,7 @@ public class WorkStatusActivity extends Activity implements OnClickListener {
 
 	@Override
 	public void onClick(View v) {
-		Intent intent = new Intent(this, UserSettingsActivity.class);
+		Intent intent = new Intent(this, SettingsMenuActivity.class);
 		startActivity(intent);	
 
 	}

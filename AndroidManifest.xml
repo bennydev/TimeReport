@@ -36,6 +36,12 @@
             <intent-filter>
              </intent-filter>
         </activity>
+        <activity
+            android:name=".activity.settings.SettingsMenuActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+             </intent-filter>
+        </activity>
         </application>
 
 </manifest>

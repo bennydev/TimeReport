@@ -2,27 +2,34 @@
 <resources>
 
     <string name="app_name">TimeReport</string>
-    <string name="at_work">At work at</string>
+    <string name="at_work">At work at %1$s</string>
     <string name="btn_next">Next</string>
     <string name="btn_skip">Skip</string>
+    <string name="curr_assignment">Current work assignment</string>
     <string name="curr_status">Current Status</string>
-    <string name="cust_settings">Customer Settings</string>
     <string name="cust_avail">Available Customers</string>
     <string name="cust_add">Add Customers</string>
-    <string name="cust_name">Customer name</string>
     <string name="cust_assignment">Project/assignment</string>
     <string name="cust_additional">Additional data</string>
+    <string name="cust_name">Customer name</string>
+    <string name="cust_reporting">Customer time reporting</string>
+    <string name="cust_reporting_url">Customer URL</string>
+    <string name="cust_settings">Customer Settings</string>
     <string name="emp_company">Employing company</string>
-    <string name="for_customer">For customer</string>
     <string name="emp_id">Employer id</string>
+    <string name="emp_consultant">Consultant</string>
+    <string name="emp_employed">Internal</string>
+    <string name="for_customer">For customer</string>
     <string name="list_reports">View time reports</string>
+    <string name="manage_assignment">Work assignment settings</string>
     <string name="not_initialized">Go to settings</string>
     <string name="punch_in">Punch IN</string>
     <string name="punch_out">Punch OUT</string>
-    <string name="punched_in_at">Punched in %d ago</string>
+    <string name="punched_in_at">Punched in %1$s ago</string>
     <string name="punched_out_at">Punched out %d ago</string>
     <string name="settings">Settings</string>
-    <string name="user_name">Your name</string>
+    <string name="user_settings">User settings</string>
     <string name="user_email">Your e-mail address</string>
+    <string name="user_name">Your name</string>
     
 </resources>
