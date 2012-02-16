@@ -3,6 +3,7 @@ package se.cag.timereport.activity.daily;
 import se.cag.timereport.R;
 import se.cag.timereport.activity.report.ListReportsActivity;
 import se.cag.timereport.activity.settings.SettingsMenuActivity;
+import se.cag.timereport.activity.settings.SharedPrefsProperties;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -12,9 +13,8 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class WorkStatusActivity extends Activity implements OnClickListener {
+public class WorkStatusActivity extends Activity implements OnClickListener, SharedPrefsProperties {
 	
-	static final String PREFS_NAME = "TimeReportPrefs";
 	
 	private final Activity act = this;
 
@@ -22,6 +22,7 @@ public class WorkStatusActivity extends Activity implements OnClickListener {
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
+        setContentView(R.layout.daily_status);
         Button but = (Button) findViewById(R.id.btnSettings);
         but.setOnClickListener(this);
         but = (Button) findViewById(R.id.btnViewReports);
@@ -34,13 +35,15 @@ public class WorkStatusActivity extends Activity implements OnClickListener {
         });
         // Restore preferences
         SharedPreferences settings = getSharedPreferences(PREFS_NAME, 0);
+        if (settings == null) {
+        	System.out.println("Settings is null!");
+        }
         boolean atWork = settings.getBoolean("atWork", false);
         TextView workStatus = (TextView) findViewById(R.id.textAtWork);
         if (atWork) {
         	// Set the punched in string on the text view
         }
         workStatus.setText(R.string.not_initialized);
-        setContentView(R.layout.daily_status);
 	}
 
 	@Override
