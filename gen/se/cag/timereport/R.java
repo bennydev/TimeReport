@@ -14,13 +14,13 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
+        public static final int btnCustSettNext=0x7f05000b;
         public static final int btnCustomerSettings=0x7f050012;
         public static final int btnNext=0x7f050018;
         public static final int btnSettings=0x7f05000f;
         public static final int btnUserSettings=0x7f050010;
         public static final int btnViewReports=0x7f05000e;
         public static final int btnWorkSettings=0x7f050011;
-        public static final int button1=0x7f05000b;
         public static final int editCustomerName=0x7f050006;
         public static final int editText1=0x7f050008;
         public static final int editText2=0x7f05000a;

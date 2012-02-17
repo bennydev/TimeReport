@@ -10,18 +10,17 @@ import android.widget.Button;
 
 public class SettingsMenuActivity extends Activity {
 	
-	private final Activity act = this;
 
 	private OnClickListener userListener = new OnClickListener() {
 	    public void onClick(View v) {
-			Intent intent = new Intent(act, UserSettingsActivity.class);
+			Intent intent = new Intent(SettingsMenuActivity.this, UserSettingsActivity.class);
 			startActivity(intent);
 	    }
 	};
 
 	private OnClickListener customerListener = new OnClickListener() {
 	    public void onClick(View v) {
-			Intent intent = new Intent(act, CustomerSettingsActivity.class);
+			Intent intent = new Intent(SettingsMenuActivity.this, CustomerSettingsActivity.class);
 			startActivity(intent);
 	    }
 	};

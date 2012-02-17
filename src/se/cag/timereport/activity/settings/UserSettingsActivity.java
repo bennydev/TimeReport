@@ -29,7 +29,8 @@ public class UserSettingsActivity extends Activity implements OnClickListener, S
 		
 		saveViewContent(userSettings);
 		Intent intent = new Intent(this, CustomerSettingsActivity.class);
-		startActivity(intent);	}
+		startActivity(intent);	
+	}
 
 	private void saveViewContent(View userSettings) {
 		// TODO Check how you save things in Android

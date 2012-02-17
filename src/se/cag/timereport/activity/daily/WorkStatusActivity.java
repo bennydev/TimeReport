@@ -16,7 +16,12 @@ import android.widget.TextView;
 public class WorkStatusActivity extends Activity implements OnClickListener, SharedPrefsProperties {
 	
 	
-	private final Activity act = this;
+	@Override
+	public void onClick(View v) {
+		Intent intent = new Intent(this, SettingsMenuActivity.class);
+		startActivity(intent);	
+
+	}
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +33,7 @@ public class WorkStatusActivity extends Activity implements OnClickListener, Sha
         but = (Button) findViewById(R.id.btnViewReports);
         but.setOnClickListener(new OnClickListener () {
         	public void onClick(View v) {
-        		Intent intent = new Intent(act, ListReportsActivity.class);
+        		Intent intent = new Intent(WorkStatusActivity.this, ListReportsActivity.class);
         		startActivity(intent);	
        		
         	}
@@ -52,10 +57,4 @@ public class WorkStatusActivity extends Activity implements OnClickListener, Sha
 		super.onDestroy();
 	}
 
-	@Override
-	public void onClick(View v) {
-		Intent intent = new Intent(this, SettingsMenuActivity.class);
-		startActivity(intent);	
-
-	}
 }
