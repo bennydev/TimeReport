@@ -1,8 +1,5 @@
 package se.cag.timereport.activity.settings;
 
-import se.cag.timereport.R;
-import se.cag.timereport.R.id;
-import se.cag.timereport.R.layout;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -11,8 +8,14 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.TextView;
+import se.cag.timereport.R;
 
-public class UserSettingsActivity extends Activity implements OnClickListener, SharedPrefsProperties {
+import static se.cag.timereport.activity.settings.SharedPrefsProperties.PREFS_NAME;
+import static se.cag.timereport.activity.settings.SharedPrefsProperties.EMPLOYEE_ID_KEY;
+import static se.cag.timereport.activity.settings.SharedPrefsProperties.EMPLOYER_NAME_KEY;
+import static se.cag.timereport.activity.settings.SharedPrefsProperties.USER_NAME_KEY;
+
+public class UserSettingsActivity extends Activity implements OnClickListener {
     /** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState) {

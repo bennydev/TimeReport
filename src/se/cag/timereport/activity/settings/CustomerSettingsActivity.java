@@ -3,22 +3,20 @@
  */
 package se.cag.timereport.activity.settings;
 
-import se.cag.timereport.R;
 import android.app.Activity;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
-import android.widget.TextView;
+import se.cag.timereport.R;
 
 /**
  * @author benny
  *
  */
 public class CustomerSettingsActivity extends Activity implements
-		OnClickListener, SharedPrefsProperties {
+		OnClickListener {
 	
 	
 
